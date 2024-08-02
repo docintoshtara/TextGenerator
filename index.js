@@ -1,8 +1,11 @@
 const express = require('express');
+var cors = require('cors')
 const { GoogleGenerativeAI } = require('@google/generative-ai');
+
 
 // Initialize your Express app
 const app = express();
+app.use(cors())
 app.use(express.json()); // Middleware to parse JSON bodies
 
 // Access your API key as an environment variable
