@@ -8,6 +8,11 @@ app.use(express.json()); // Middleware to parse JSON bodies
 // Access your API key as an environment variable
 const genAI = new GoogleGenerativeAI('AIzaSyDF-56qM2wmKc0YdGNrKamlnIhqkuNSluY');
 
+app.get('/',(req,res)=>{
+    res.send("Working")
+
+})
+
 // Route to generate content
 app.post('/generate', async(req, res) => {
     try {
