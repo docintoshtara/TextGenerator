@@ -9,7 +9,7 @@ app.use(cors())
 app.use(express.json()); // Middleware to parse JSON bodies
 
 // Access your API key as an environment variable
-const genAI = new GoogleGenerativeAI('AIzaSyDF-56qM2wmKc0YdGNrKamlnIhqkuNSluY');
+const genAI = new GoogleGenerativeAI('AIzaSyBtlJbI8caRYMrjTA-V_PZD9baSvfxTGoE');
 
 app.get('/',(req,res)=>{
     res.send("Working")
